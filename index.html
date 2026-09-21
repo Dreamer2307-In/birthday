@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday 🎂</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main class="birthday-page">
+      <!-- PAGE 1: HERO & CAKE -->
+      <section id="page1" class="page-section active">
+        <div class="hero">
+          <p class="small-title">MAKE A WISH!!</p>
+          <h1>Happy Birthday</h1>
+
+          <!-- Button -->
+          <button id="blowButton" class="blow-button">
+            <span class="button-icon">≋</span>
+            BLOW THE CANDLE
+          </button>
+
+          <!-- Cake Area -->
+          <div class="cake-area">
+            <div class="flame">
+              <div class="flame-inner"></div>
+            </div>
+            <div class="candle">
+              <div class="candle-stripes"></div>
+            </div>
+            <div class="cake">
+              <div class="cake-top"></div>
+              <div class="cake-body">
+                <div class="icing icing-one"></div>
+                <div class="icing icing-two"></div>
+                <div class="icing icing-three"></div>
+                <div class="cake-decoration dec-one">✦</div>
+                <div class="cake-decoration dec-two">♡</div>
+                <div class="cake-decoration dec-three">✦</div>
+              </div>
+              <div class="cake-bottom"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left Side Character -->
+        <div class="side-character">
+          <img
+            src="images/landingCat.png"
+            alt="Birthday decoration"
+            class="side-image"
+          />
+        </div>
+
+        <!-- Right Image -->
+        <img
+          src="images/monke.png"
+          alt="Birthday decoration"
+          class="right-image"
+        />
+
+        <!-- Top Left Decor -->
+      </section>
+
+      <!-- PAGE 2: GIFT ACCEPTANCE PAGE -->
+      <section id="page2" class="page-section gift-section">
+        <h2 class="gift-title">PLEASE ACCEPT THE GIFT</h2>
+
+        <div class="character-area">
+          <img
+            id="giftCharacter"
+            src="images/pleadingCharacter.png"
+            alt="Pleading Character"
+            class="pleading-img"
+          />
+        </div>
+
+        <div class="button-group">
+          <button id="yesBtn" class="gift-btn yes-btn">YES</button>
+          <button id="noBtn" class="gift-btn no-btn">NO</button>
+        </div>
+      </section>
+
+      <!-- PAGE 3: CHOOSE YOUR GIFTS -->
+      <section id="page3" class="page-section gift-choice-section">
+        <h2 class="choice-title">Choose Your Gifts</h2>
+        <p class="choice-subtitle">Le yaar tu bhi kya he yaad rakhegi😋</p>
+
+        <div class="gifts-container">
+          <!-- Letter Gift -->
+          <div class="gift-card" id="giftLetter">
+            <img src="images/letter.png" alt="Letter" class="gift-img" />
+          </div>
+
+          <!-- Bouquet Gift -->
+          <div class="gift-card" id="giftFlowers">
+            <img src="images/flowers.png" alt="Flowers" class="gift-img" />
+          </div>
+
+          <!-- Gift Box -->
+          <div class="gift-card" id="giftBox">
+            <img src="images/giftbox.png" alt="Gift Box" class="gift-img" />
+          </div>
+        </div>
+      </section>
+
+
+      <!-- LETTER MODAL POPUP -->
+    <div id="letterModal" class="letter-modal">
+      <div class="letter-container">
+        <!-- Back Button -->
+        <button id="closeLetterBtn" class="back-btn">← Back</button>
+        
+        <!-- Envelope & Letter Paper -->
+        <div class="envelope-wrapper">
+          <img src="images/letter.png" alt="Envelope" class="modal-envelope-img" />
+          
+          <!-- Text Paper Layer overlaying envelope -->
+          <div class="paper-content">
+            <h2 class="letter-heading">Happy Birthday</h2>
+            <div id="typewriterText" class="letter-body"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 4: FLOWERS SECTION -->
+      <section id="page4" class="page-section flowers-section">
+        <!-- Back Button -->
+        <button id="backFromFlowers" class="back-btn top-left-back">← Back</button>
+
+        <div class="flowers-layout">
+          <!-- Left Content -->
+          <div class="flowers-left">
+            <h1 class="handwritten-title">Kya he kregi ye phool ka next time thusne ke liye kuch le aaunga kuch</h1>
+            
+            <div class="character-wrapper">
+              <div class="speech-bubble bubble-1">Potty khale</div>
+              <img src="images/char.png" alt="Cute Character" class="flower-char-img" />
+              <div class="speech-bubble bubble-2">ye phool he rakhle cuz tu toh nahati nhi kahi se toh khusboo aaye</div>
+            </div>
+          </div>
+
+          <!-- Right Bouquet Image -->
+          <div class="flowers-right">
+            <img src="images/flowers.png" alt="Bouquet" class="bouquet-large-img" />
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE 5: GIFT BOX FULL IMAGE DISPLAY -->
+<section id="page5" class="page-section giftbox-section">
+  <!-- Back Button (Optional) -->
+  <button id="backFromGiftBox" class="back-btn top-left-back">← Back</button>
+
+  <!-- Full Window Image Container -->
+  <div class="giftbox-img-container">
+    <img src="images/background.png" alt="Birthday Collage" class="full-display-img" />
+  </div>
+</section>
+
+
+
+    </main>
+
+    <div id="funnyPopup" class="funny-popup">
+      <div class="popup-content">
+        <img id="popupImage" src="" alt="Funny Reaction" />
+        <p class="popup-text">
+          SYBAU and just choose yes (Tap anywhere to close!)
+        </p>
+      </div>
+      <!-- Canvas Confetti Library -->
+      <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
